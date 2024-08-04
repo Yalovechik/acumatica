@@ -1,0 +1,8 @@
+vpcName: acumatica-vpc-test
+region: eu-west-1
+account: ""
+
+tenants:
+  - name: client1
+    dbName: AcumaticaDB
+    instanceName: AcumaticaInstance
