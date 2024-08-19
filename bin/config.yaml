@@ -1,8 +1,9 @@
-vpcName: acumatica-vpc-test
-region: eu-west-1
+vpcName: acumatica-vpc
+region:
 account: ""
 
 tenants:
   - name: client1
     dbName: AcumaticaDB
     instanceName: AcumaticaInstance
+    acumaticaVersion: 23.2/23.210.0017

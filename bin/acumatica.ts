@@ -18,7 +18,7 @@ const env = {
 };
 
 // Deploy VPC Stack
-const vpcStack = new VpcStack(app, 'VpcStackTest', {
+const vpcStack = new VpcStack(app, 'VpcStack', {
   vpcName: config.vpcName,
   env,
 });
@@ -39,7 +39,7 @@ if (tenantName) {
     clientName: tenant.name,
     dbName: tenant.dbName,
     instanceName: tenant.instanceName,
-    acumaticaMsiUrl: "https://acumatica-builds.s3.amazonaws.com/builds/24.1/24.109.0016/AcumaticaERP/AcumaticaERPInstall.msi",
+    acumaticaMsiUrl: `https://acumatica-builds.s3.amazonaws.com/builds/${tenant.acumaticaVersion}/AcumaticaERP/AcumaticaERPInstall.msi`,
     awsCliInstallerUrl: "https://awscli.amazonaws.com/AWSCLIV2.msi",
     env,
     vpcName: config.vpcName

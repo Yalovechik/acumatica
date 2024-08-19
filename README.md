@@ -62,3 +62,7 @@ THe default username - admin, pass - setup
 ```
 
 ```
+
+It has been tested with the following:
+24.1/24.109.0016
+23.2/23.210.0017
